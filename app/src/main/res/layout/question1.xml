@@ -9,11 +9,11 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/AppName"
+        android:id="@+id/questionNum"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
-        android:text="Question 1\nWhat Song is this?"
+        android:text="Question 1"
         android:textAlignment="center"
         android:fontFamily="casual"
         android:textSize="50dp"
@@ -21,5 +21,78 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/image1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/questionNum"
+        app:layout_constraintBottom_toTopOf="@id/options"
+        ></ImageView>
+
+    <LinearLayout
+        android:id="@+id/options"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/image"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/next"
+        android:orientation="vertical">
+        <CheckBox
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textAlignment="center"
+            android:fontFamily="casual"
+            android:textSize="25dp"
+            android:textColor="@color/text"
+            android:buttonTint="@color/text"
+            android:text="Mulan"></CheckBox>
+        <CheckBox
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textAlignment="center"
+            android:fontFamily="casual"
+            android:textSize="25dp"
+            android:textColor="@color/text"
+            android:buttonTint="@color/text"
+            android:text="Beauty and the Beast"></CheckBox>
+        <CheckBox
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textAlignment="center"
+            android:fontFamily="casual"
+            android:textSize="25dp"
+            android:textColor="@color/text"
+            android:buttonTint="@color/text"
+            android:text="Hunchback of Notre Dame"></CheckBox>
+        <CheckBox
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textAlignment="center"
+            android:fontFamily="casual"
+            android:textSize="25dp"
+            android:textColor="@color/text"
+            android:buttonTint="@color/text"
+            android:text="Anastasia"></CheckBox>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Next"
+        android:textAlignment="center"
+        android:fontFamily="casual"
+        android:textSize="25dp"
+        android:textColor="@color/text"
+        android:background="@color/other"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/options" ></Button>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

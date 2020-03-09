@@ -12,7 +12,7 @@
         android:id="@+id/AppName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Music Quiz\n Guess the Song"
+        android:text="Disney Quiz\n\n Guess what movie the character is from?"
         android:textAlignment="center"
         android:fontFamily="casual"
         android:textSize="50dp"
