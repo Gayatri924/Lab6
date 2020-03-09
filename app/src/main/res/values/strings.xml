@@ -1,3 +1,20 @@
 <resources>
     <string name="app_name">Lab6</string>
+    <string-array name = "one">
+        <item>Mulan</item>
+        <item>Beauty and the Beast</item>
+        <item>The Hunchback of Notre Dame</item>
+        <item>Anastasia</item>
+    </string-array>
+    <string-array name = "two">
+        <item>Finding Nemo</item>
+        <item>Atlantis</item>
+        <item>The Little Mermaid</item>
+        <item>The Black Cauldron</item>
+    </string-array>
+    <string-array
+        name="correct">
+        <item>Beauty and the Beast</item>
+        <item>The Little Mermaid</item>
+    </string-array>
 </resources>

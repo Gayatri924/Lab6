@@ -43,6 +43,7 @@
         app:layout_constraintBottom_toTopOf="@id/next"
         android:orientation="vertical">
         <CheckBox
+            android:id="@+id/one"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:textAlignment="center"
@@ -52,6 +53,7 @@
             android:buttonTint="@color/text"
             android:text="Mulan"></CheckBox>
         <CheckBox
+            android:id="@+id/two"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:textAlignment="center"
@@ -61,6 +63,7 @@
             android:buttonTint="@color/text"
             android:text="Beauty and the Beast"></CheckBox>
         <CheckBox
+            android:id="@+id/three"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:textAlignment="center"
@@ -70,6 +73,7 @@
             android:buttonTint="@color/text"
             android:text="Hunchback of Notre Dame"></CheckBox>
         <CheckBox
+            android:id="@+id/four"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:textAlignment="center"
