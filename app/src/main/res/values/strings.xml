@@ -12,9 +12,65 @@
         <item>The Little Mermaid</item>
         <item>The Black Cauldron</item>
     </string-array>
+    <string-array name = "three">
+        <item>Snow White</item>
+        <item>Sleeping Beauty</item>
+        <item>Brother Bear</item>
+        <item>The Sword in the Stone</item>
+    </string-array>
+    <string-array name="four">
+        <item>Chicken Little</item>
+        <item>Zootopia</item>
+        <item>Lady and the Tramp</item>
+        <item>The Fox and the Hound</item>
+    </string-array>
+    <string-array name="five">
+        <item>Strange Magic</item>
+        <item>Chicken Little</item>
+        <item>Monsters Inc.</item>
+        <item>The Robinsons</item>
+    </string-array>
+    <string-array name="six">
+        <item>Timon and Pumbaa</item>
+        <item>Lion King</item>
+        <item>Alice in Wonderland</item>
+        <item>The Jungle Book</item>
+    </string-array>
+    <string-array name="seven">
+        <item>Bambi</item>
+        <item>G Force</item>
+        <item>The Rescuers Down Under</item>
+        <item>Cinderella</item>
+    </string-array>
+    <string-array name="eight">
+        <item>Peter Pan</item>
+        <item>Treasure Planet</item>
+        <item>Atlantis</item>
+        <item>The Little Mermaid</item>
+    </string-array>
+    <string-array name="nine">
+        <item>Wreck It Ralph Breaks the Internet</item>
+        <item>Big Hero 6</item>
+        <item>Toy Story 4</item>
+        <item>Spies in Disguise</item>
+    </string-array>
+    <string-array name="ten">
+        <item>The Sword in the Stone</item>
+        <item>The Jungle Book</item>
+        <item>Tarzan</item>
+        <item>Robin Hood</item>
+    </string-array>
     <string-array
         name="correct">
         <item>Beauty and the Beast</item>
         <item>The Little Mermaid</item>
+        <item>The Sword in the Stone</item>
+        <item>Chicken Little</item>
+        <item>The Robinsons</item>
+        <item>Timon and Pumbaa</item>
+        <item>The Rescuers Down Under</item>
+        <item>Treasure Planet</item>
+        <item>Wreck It Ralph Breaks the Internet</item>
+        <item>Robin Hood</item>
     </string-array>
 </resources>
