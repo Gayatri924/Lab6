@@ -14,6 +14,7 @@ import android.content.res.Resources;
 public class MainActivity extends AppCompatActivity {
 
     Button begin;
+    Button replay;
     TextView number;
     ImageView character;
     CheckBox option1;
@@ -27,6 +28,8 @@ public class MainActivity extends AppCompatActivity {
     CheckBox[] boxes;
     int[] allCharacters;
     TextView scoring;
+    Listener x = new Listener();
+    Listener2 y = new Listener2();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,25 +45,8 @@ public class MainActivity extends AppCompatActivity {
                 R.drawable.image5, R.drawable.image6,R.drawable.image7, R.drawable.image8, R.drawable.image9,
                 R.drawable.image10};
         begin = findViewById(R.id.begin);
-        begin.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                setContentView(R.layout.question1);
-                currentQ = 0;
-                number = findViewById(R.id.questionNum);
-                character = findViewById(R.id.image);
-                option1 = findViewById(R.id.one);
-                option2 = findViewById(R.id.two);
-                option3 = findViewById(R.id.three);
-                option4 = findViewById(R.id.four);
-                Listener x = new Listener();
-                option1.setOnClickListener(x);
-                option2.setOnClickListener(x);
-                option3.setOnClickListener(x);
-                option4.setOnClickListener(x);
-                boxes = new CheckBox[]{option1, option2, option3, option4};
-            }
-        });
+        begin.setOnClickListener(y);
+
     }
 
     public class Listener implements View.OnClickListener {
@@ -77,6 +63,8 @@ public class MainActivity extends AppCompatActivity {
                     setContentView(R.layout.end_quiz);
                     scoring = findViewById(R.id.scoring);
                     scoring.setText("Game Over! You got " + score + " points.");
+                    replay = findViewById(R.id.replay);
+                    replay.setOnClickListener(y);
                 }else{
                     String[] options = names[currentQ];
                     number.setText("Question "+ (currentQ + 1));
@@ -86,6 +74,27 @@ public class MainActivity extends AppCompatActivity {
                     }
                 }
             }
+        }
+    }
+
+    public class Listener2 implements View.OnClickListener {
+
+        @Override
+        public void onClick(View v) {
+            setContentView(R.layout.question1);
+            currentQ = 0;
+            score = 0;
+            number = findViewById(R.id.questionNum);
+            character = findViewById(R.id.image);
+            option1 = findViewById(R.id.one);
+            option2 = findViewById(R.id.two);
+            option3 = findViewById(R.id.three);
+            option4 = findViewById(R.id.four);
+            option1.setOnClickListener(x);
+            option2.setOnClickListener(x);
+            option3.setOnClickListener(x);
+            option4.setOnClickListener(x);
+            boxes = new CheckBox[]{option1, option2, option3, option4};
         }
     }
 }
