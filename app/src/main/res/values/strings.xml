@@ -1,18 +1,18 @@
 <resources>
     <string name="app_name">Lab6</string>
-    <string-array name = "one">
+    <string-array name="one">
         <item>Mulan</item>
         <item>Beauty and the Beast</item>
         <item>The Hunchback of Notre Dame</item>
         <item>Anastasia</item>
     </string-array>
-    <string-array name = "two">
+    <string-array name="two">
         <item>Finding Nemo</item>
         <item>Atlantis</item>
         <item>The Little Mermaid</item>
         <item>The Black Cauldron</item>
     </string-array>
-    <string-array name = "three">
+    <string-array name="three">
         <item>Snow White</item>
         <item>Sleeping Beauty</item>
         <item>Brother Bear</item>
@@ -60,8 +60,7 @@
         <item>Tarzan</item>
         <item>Robin Hood</item>
     </string-array>
-    <string-array
-        name="correct">
+    <string-array name="correct">
         <item>Beauty and the Beast</item>
         <item>The Little Mermaid</item>
         <item>The Sword in the Stone</item>
@@ -73,4 +72,8 @@
         <item>Wreck It Ralph Breaks the Internet</item>
         <item>Robin Hood</item>
     </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
 </resources>
